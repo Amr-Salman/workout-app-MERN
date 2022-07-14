@@ -9,10 +9,6 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Middleware
-app.use((req, res, next) => {
-  console.log(`Path: ${req.path}, Method: ${req.method} `);
-  next();
-});
 // T6his middleware for allows us to use the res.body in web form
 app.use(express.json());
 
